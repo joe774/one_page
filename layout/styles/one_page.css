@@ -1,0 +1,141 @@
+@charset "utf-8";
+@import url("fontawesome-free/css/all.css");
+
+html{overflow-y:scroll; overflow-x:hidden;}
+html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
+
+img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+#backtotop{color:#FFFFFF; background-color:darkviolet;}
+
+.list-right
+{
+	position: fixed;
+	right: 4%;
+	top: 20%;
+	z-index: 999;
+}
+
+#carouselExampleFade>a
+{
+	z-index: 10;
+	position: absolute;
+	top:0%;
+}
+
+.block
+{
+	max-height: fit-content;
+}
+
+.row>iframe
+{
+	height: 300px;
+	padding: 7px;
+}
+
+#block1
+{
+	height: 700px;
+}
+
+.container .row
+{
+	padding-top: 50px;
+}
+
+#block3
+{
+	height: 700px;
+	padding: 250px 50px 50px 50px;
+	color: white;
+}
+
+#block3>h1
+{
+	display: flex;
+	justify-content: center;
+}
+
+#block3 .block3-1
+{
+	display: flex;
+	text-align: center;
+	margin-top: 60px;
+}
+
+#block4
+{
+	height: 400px;
+	padding: 150px 50px 50px 50px;
+	color: white;
+}
+
+#block4 .block4-1
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.block4-3>a
+{
+	margin-right: 10px;
+}
+
+.hr
+{
+ 	height: 4px !important;
+ 	background: #333;
+ 	background-image: linear-gradient(to right, black, rgb(57, 4, 250), black);
+}
+
+.rightimg1
+{
+	width: 280px;
+	position: absolute;
+}
+
+.rightimg2
+{
+	position: relative;
+	display: grid;
+	top:240px;
+	left: 25px;
+}
+
+.carousel-indicators
+{
+	position: relative;
+	top: 455px;
+	left: -7%;
+	width: 84%;
+	height: 105px;
+}
+
+.carousel-indicators [data-bs-target]
+{
+	width: 100%;
+	height: 100%;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: initial;
+	/* initial */
+}
+
+@media screen and (max-width:700px)
+{
+	.rightimg1{width: 45%;margin-left: 61%;}
+	.rightimg2{width: 30%;margin-left: 56%;top: 74px;}
+	.row>iframe{padding: 10px 5px 10px 5px;}
+	#block1{height: auto;}
+	#block3{padding: 150px 50px 50px 50px;}
+	#block4{height: auto;}
+	.block4-1{display: block !important;}
+	.container .row{padding-top: 0px;}
+	.carousel-indicators{top: 100px;left: -6%;height: 25px;}
+	.carousel-indicators [data-bs-target]{margin-left: 0px;}
+}
